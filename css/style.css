@@ -10,6 +10,17 @@
   transition: all .2s linear;
 }
 
+.heading{
+  font-size: 1.3rem;
+  margin: 2rem 0;
+  text-transform: capitalize;
+  color: var(--purple);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+}
+
 .container{
   min-height: 100vh;
   display: flex;
@@ -34,10 +45,11 @@
 
 .container .side-bar .list li{
   padding:10px 0;
-  font-size: 20px;
+  font-size: 10px;
   cursor: pointer;
   position: relative;
   list-style: none;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
 }
 
 .container .side-bar .list li::before{
@@ -54,7 +66,7 @@
 
 .container .side-bar .list li.active,
 .container .side-bar .list li:hover{
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .container .side-bar .list li.active::before,
@@ -70,6 +82,7 @@
 .container .video-container video{
   width: 100%;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 #menu-btn{
